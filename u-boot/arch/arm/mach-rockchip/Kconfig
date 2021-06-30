@@ -722,7 +722,7 @@ config ROCKCHIP_VENDOR_PARTITION
 config USING_KERNEL_DTB
 	bool "Using dtb from Kernel/resource for U-Boot"
 	depends on RKIMG_BOOTLOADER && OF_LIVE
-	default y
+	default n
 	help
 	  This enable support to read dtb from resource and use it for U-Boot,
 	  the uart and emmc will still using U-Boot dtb, but other devices like
